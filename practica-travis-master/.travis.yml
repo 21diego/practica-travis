@@ -1,0 +1,11 @@
+language: java
+script: mvn clean test
+jdk:
+  - oraclejdk11
+
+notifications:
+  email:
+    recipients:
+      - kevinvg08@gmail.com # Colocar el email registrado en GitHub
+    on_success: change # default: change - Avisa cuando hay algun cambio en el proyecto
+    on_failure: always # default: always - Avisa siempre que el proceso de build falle en Travis
